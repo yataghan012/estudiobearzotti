@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import React, { useState, useEffect } from 'react';
+import logo2 from '../assets/images/logo2.png';
 
 export default function Navbar({ containerRef }: { containerRef: React.RefObject<HTMLDivElement> }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -122,7 +123,7 @@ export default function Navbar({ containerRef }: { containerRef: React.RefObject
           {/* Center Logo */}
           <div className="flex justify-center items-center px-4">
             <motion.img
-              src={import.meta.env.BASE_URL + "images/logo2.png"}
+              src={logo2}
               alt="Estudio BEARZOTTI"
               initial={{ opacity: 0, filter: 'invert(1) brightness(2) blur(10px)' }}
               animate={{ opacity: 1, filter: 'invert(1) brightness(2) blur(0px)' }}
@@ -170,7 +171,7 @@ export default function Navbar({ containerRef }: { containerRef: React.RefObject
           {/* Center Logo for Mobile */}
           <div className="flex justify-center items-center py-2 h-full flex-grow">
             <motion.img
-              src={import.meta.env.BASE_URL + "images/logo2.png"}
+              src={logo2}
               alt="Estudio BEARZOTTI"
               initial={{ opacity: 0, filter: 'invert(1) brightness(2) blur(10px)' }}
               animate={{ opacity: 1, filter: 'invert(1) brightness(2) blur(0px)' }}
