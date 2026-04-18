@@ -1,11 +1,11 @@
-<div align="center">
+# SGI Arquitectura
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Portfolio profesional de arquitectura enfocado en el diseño de espacios residenciales, comerciales y proyectos de restauración patrimonial.
 
-  <h1>Built with AI Studio</h2>
+## Características
+- **Diseño Responsivo:** Experiencia fluida adaptada a dispositivos móviles y escritorio.
+- **Proyectos Destacados:** Galería interactiva que detalla la visión, ubicación, año, área y procesos de diseño de cada obra.
+- **Tecnologías:** Desarrollado con React, Vite y Tailwind CSS para un rendimiento óptimo y una estética moderna.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Despliegue
+Este sitio está configurado para desplegarse automáticamente en GitHub Pages mediante GitHub Actions.
