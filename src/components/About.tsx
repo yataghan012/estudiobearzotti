@@ -1,11 +1,11 @@
 import { motion, AnimatePresence, useInView } from 'motion/react';
 import { useEffect, useState, useRef } from 'react';
 
-import slide1 from '../assets/images/about-slide-1.png';
-import slide2 from '../assets/images/about-slide-2.png';
-import slide3 from '../assets/images/about-slide-3.png';
-
-const SLIDES = [slide1, slide2, slide3];
+const SLIDES = [
+  import.meta.env.BASE_URL + 'images/about-slide-1.png',
+  import.meta.env.BASE_URL + 'images/about-slide-2.png',
+  import.meta.env.BASE_URL + 'images/about-slide-3.png',
+];
 
 const STATS = [
   { value: 12, suffix: '+', label: 'Años de experiencia' },

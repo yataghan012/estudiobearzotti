@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring, useTransform, useMotionTemplate, AnimatePresence } from 'motion/react';
 
 const HERO_TEXTS = [
-  { line1: 'Hitós', line2: 'urbanos' },
-  { line1: 'Plástica', line2: 'escultórica' },
+  { line1: 'Hitos', line2: 'urbanos' },
   { line1: 'Arquitectura', line2: 'de vanguardia' },
   { line1: 'Resolver lo', line2: 'imposible' },
   { line1: 'Capital', line2: 'visual' }

@@ -1,12 +1,6 @@
 import { Project, Service } from './types';
 
-// Import assets from new location
-import logo from './assets/images/logo.png';
-import logo2 from './assets/images/logo2.png';
-import project1 from './assets/images/project-1.jpg';
-import project2 from './assets/images/project-2.jpg';
-import project3 from './assets/images/project-3.jpg';
-import project4 from './assets/images/project-4.jpg';
+// Use BASE_URL for images from public folder
 export const PROJECTS: Project[] = [
   {
     id: '1',
@@ -16,7 +10,7 @@ export const PROJECTS: Project[] = [
     location: 'Córdoba, Argentina',
     year: '2024',
     area: '150 m²',
-    images: [project1, 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000'],
+    images: [import.meta.env.BASE_URL + 'images/project-1.jpg', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000'],
     featured: true,
     technicalDetails: {
       materials: ['Hormigón visto', 'Metal', 'Vidrio'],
@@ -25,7 +19,7 @@ export const PROJECTS: Project[] = [
     },
     process: {
       sketch: 'https://picsum.photos/seed/bearzotti1/1920/1080?grayscale',
-      final: project1,
+      final: import.meta.env.BASE_URL + 'images/project-1.jpg',
       description: 'La verticalidad y resolución plástica del espacio urbano define este hito contemporáneo.'
     }
   },
@@ -37,10 +31,10 @@ export const PROJECTS: Project[] = [
     location: 'Córdoba, Argentina',
     year: '2023',
     area: '2.400 m²',
-    images: [project2, 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000'],
+    images: [import.meta.env.BASE_URL + 'images/project-2.jpg', 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000'],
     process: {
       sketch: 'https://picsum.photos/seed/bearzotti2/1920/1080?grayscale',
-      final: project2,
+      final: import.meta.env.BASE_URL + 'images/project-2.jpg',
       description: 'Arquitectura que se convierte en un espacio para la contemplación.'
     }
   },
@@ -52,7 +46,7 @@ export const PROJECTS: Project[] = [
     location: 'Córdoba, Argentina',
     year: '2023',
     area: '1.200 m²',
-    images: [project3, 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2000'],
+    images: [import.meta.env.BASE_URL + 'images/project-3.jpg', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=2000'],
     technicalDetails: {
       materials: ['Hormigón esculpido', 'Acero corten'],
       client: 'Privado',
@@ -67,7 +61,7 @@ export const PROJECTS: Project[] = [
     location: 'Manantiales, Córdoba',
     year: '2022',
     area: '380 m²',
-    images: [project4],
+    images: [import.meta.env.BASE_URL + 'images/project-4.jpg'],
     featured: true
   }
 ];
